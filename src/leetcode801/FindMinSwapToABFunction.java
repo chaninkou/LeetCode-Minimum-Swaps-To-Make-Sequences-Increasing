@@ -13,15 +13,15 @@ public class FindMinSwapToABFunction {
             
             boolean switchABToIncrease = A[i - 1] < B[i] && B[i - 1] < A[i];
             
-            if(bothIncrease && switchABToIncrease){
+            if(bothIncrease && switchABToIncrease){ // AB could swap or not swap
                 int temp = Math.min(prevNoSwap, prevSwap);
                 
                 prevSwap = temp + 1;
                 
                 prevNoSwap = temp;
-            } else if(bothIncrease){
+            } else if(bothIncrease){ // AB should not swap
                 prevSwap++;
-            } else { // switchABToIncrease
+            } else { // AB should swap
                 int temp = prevSwap;
                 
                 prevSwap = prevNoSwap + 1;
