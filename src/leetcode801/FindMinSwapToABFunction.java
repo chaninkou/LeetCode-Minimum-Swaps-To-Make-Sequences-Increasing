@@ -19,9 +19,9 @@ public class FindMinSwapToABFunction {
                 prevSwap = temp + 1;
                 
                 prevNoSwap = temp;
-            } else if(bothIncrease){ // AB should not swap
+            } else if(bothIncrease){ // AB does not need to swap
                 prevSwap++;
-            } else { // AB should swap
+            } else { // AB need to swap
                 int temp = prevSwap;
                 
                 prevSwap = prevNoSwap + 1;
