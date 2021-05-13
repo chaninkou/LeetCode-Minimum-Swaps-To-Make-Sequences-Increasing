@@ -5,7 +5,6 @@ public class FindMinSwapToABFunction {
         
     	int prevNoSwap = 0;
         
-    	// 1 as default
     	int prevSwap = 1;
         
         for(int i = 1; i < A.length; i++){
