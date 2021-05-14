@@ -1,6 +1,7 @@
 package leetcode801;
 
 public class FindMinSwapToABFunction {
+	// O(n)
     public int minSwap(int[] A, int[] B) {
         
     	int prevNoSwap = 0;
